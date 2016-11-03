@@ -3,6 +3,7 @@ module.exports = function(app)
     app.get("/api/test", findAllMessages);
 
     function findAllMessages(req, res) {
+        console.log(req.body);
         loginJson = {
             "recipient":{
                 "phone_number":"+1(562)583-6629"
