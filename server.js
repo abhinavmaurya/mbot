@@ -30,6 +30,8 @@ app.post('/webhook/', function (req, res) {
             text = event.message.text
            // sendTextMessage(sender, "Text received, echo: " + JSON.stringify(req.body))
             checkLogin(sender, "Text received, echo: " + JSON.stringify(req.body))
+            //sendTextMessage(sender, "Text received, echo: " + JSON.stringify(req.body))
+
         }
     }
     res.sendStatus(200)
@@ -95,3 +97,4 @@ function checkLogin(sender, text){
         }
     })
 }
+
